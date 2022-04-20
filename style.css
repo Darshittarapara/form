@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  
+
+    font-style:Regular 400;
+}
+body {
+    background: linear-gradient(#2c3e50,#3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: white;
+    height: 400px;
+    width: 350px;
+    border-radius: 15px;
+}
+.container .form-container{
+    padding: 10px 55px;
+    margin-bottom: 16px;
+
+}
+.container .form-container h1 {
+    text-align: center;
+    text-transform:uppercase;
+    margin: 10px 0px;
+    color: rgb(2, 20, 20);
+}
+.container .form-container form {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
+.container .form-container form input{
+    margin: 10px 0px;
+    width:250px ;
+   padding: 6px 0px;
+}
+.container .form-container form input::placeholder{
+    padding: 5px 10px;
+    font-size: 17px;
+}
+.container .form-container form input:focus{
+    font-size: 15px;
+/* 
+border: 1px solid yellow; */
+}
+.container .form-container form #checked{
+    width: auto;
+    margin: 0px 4px;
+    text-align: left;
+}
+.container .form-container form input[type="submit"]{
+    background: #3498db;
+    border: 0px;
+    color: white;
+    padding: 10px 0px;
+    transition: all 0.25s ease-in-out;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.container .form-container form input[type="submit"]:hover{
+    background: linear-gradient(#73C8A9,#373B44);
+
+}
+.container .form-container .link{
+    text-decoration: none;
+    color: #2c3e50;
+
+    font-size: 18px;
+    text-align: center;
+}
+.container .form-container .link:hover {
+    color: rgb(192, 21, 21);
+}
+
+
+@media screen and (max-width:565px) {
+.container {
+    
+    height: auto;
+}
+   
+.container .form-container form  {
+    margin-top: 10px;
+}
+}
